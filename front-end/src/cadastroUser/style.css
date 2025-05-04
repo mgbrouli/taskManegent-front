@@ -1,0 +1,40 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(59, 48, 59);
+}
+form{
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 6px 3px 7px rgba(0, 0, 0, 0.651);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: inline-block;
+    
+}
+
+form input{
+    height: 30px;
+    width: 40%;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 15px;
+    color: black;
+    outline: none;
+}
+form #submit{
+    border-radius: 2px;
+    background-color: lightblue;
+}
+form span{
+    color: red;
+    margin-left: 15px;
+    
+}
