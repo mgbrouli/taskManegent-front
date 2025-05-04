@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Dashboard Tasks</title>
 </head>
 <body>
@@ -13,33 +14,47 @@
             </nav>
         </header>
         <aside>
-            botão para adicionar a Task
-            lista de task para o management
+            <h2>Gerencia Tarefas</h2>
+            <button id="addTask">Adicionar tarefa +</button>
+    
+            <div id="taskInLine" class="taskToResolv">
+                <div class="task-obj">
+                    <h3>Titulo task</h3>
+                    <p>Pequena descrição besta</p>
+                    <button>editar</button>
+                    <button>excluir </button>
+                </div>
+
+            </div>
         </aside>
         <section>
-            botao para adicionar subtasks
-            subtasks da categoria, e também o que tera que fazer
-            e adicionar quantas atividades em cada subtasks
-
-        </section>
-        <section>
-            Tasks em andamento, e atualizadas de acordo com porcentagem.
-            Funções, com varias atividades em cada subtask, só pode ir para o finãl caso 
-            tenha terminado 100% cada task.
-            se não volta para a lista de task com a porcentagem
-
-        </section>
-        <section>
-            Aqui vai as tasks preparadas,
-            com 100%.
-            uma vez finalizadas, nao podemos mais editar, porem podemos analizar e 
-            reabrir fazendo a nova task pegala como referencia. 
-            Nesta parte sera salva de acordo com o Dia e mês.
+            
+            <div class="tasks_slot" id="tasks_before">
+                botao para adicionar subtasks
+                subtasks da categoria, e também o que tera que fazer
+                e adicionar quantas atividades em cada subtasks
+            </div><!--taskds_before-->
+            
+            <div class="tasks_slot" id="tasks_midlle">
+                Tasks em andamento, e atualizadas de acordo com porcentagem.
+                Funções, com varias atividades em cada subtask, só pode ir para o finãl caso 
+                tenha terminado 100% cada task.
+                se não volta para a lista de task com a porcentagem
+            </div><!--tasks_middle-->
+        
+            <div class="tasks_slot" id="tasks_ended">
+                Aqui vai as tasks preparadas,
+                com 100%.
+                uma vez finalizadas, nao podemos mais editar, porem podemos analizar e 
+                reabrir fazendo a nova task pegala como referencia. 
+                Nesta parte sera salva de acordo com o Dia e mês.
+            </div>
         </section>
 
         <footer>
 
         </footer>
     </main>
+    <script src="../static/taskManagement.js"></script>
 </body>
 </html>
