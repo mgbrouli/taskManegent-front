@@ -60,10 +60,16 @@ section{
 
 .task-obj{
     width: 95%;
-    height: 100px;
+    height: 80px;
     background-color: rgb(47, 194, 47);
     border-radius: 15px;
     margin: 5px;
     padding: 3px;
 }
+.task-obj:hover{
+    cursor: grab;
+}
 
+.ebjEdit{
+    color: red;
+}

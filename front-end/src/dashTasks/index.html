@@ -18,14 +18,32 @@
             <button id="addTask">Adicionar tarefa +</button>
     
             <div id="taskInLine" class="taskToResolv">
-                <div class="task-obj">
+                <div draggable="true" class="task-obj">
                     <h3>Titulo task</h3>
                     <p>Pequena descrição besta</p>
                     <button>editar</button>
                     <button>excluir </button>
                 </div>
-
-            </div>
+                <div draggable="true" class="task-obj">
+                    <h3>Titulo task</h3>
+                    <p>Pequena descrição besta</p>
+                    <button>editar</button>
+                    <button>excluir </button>
+                </div>
+                <div draggable="true" class="task-obj objEdit">
+                    <h3>Titulo task</h3>
+                    <p>Pequena descrição besta</p>
+                    <button>editar</button>
+                    <button>excluir </button>
+                </div>
+                <div draggable="true" class="task-obj">
+                    <h3>Titulo task</h3>
+                    <p>Pequena descrição besta</p>
+                    <button>editar</button>
+                    <button>excluir </button>
+                    <button>Add subtask</button>
+                </div>
+            </div><!--taskToResolv-->
         </aside>
         <section>
             
@@ -35,7 +53,7 @@
                 e adicionar quantas atividades em cada subtasks
             </div><!--taskds_before-->
             
-            <div class="tasks_slot" id="tasks_midlle">
+            <div class="tasks_slot" id="tasks_middle">
                 Tasks em andamento, e atualizadas de acordo com porcentagem.
                 Funções, com varias atividades em cada subtask, só pode ir para o finãl caso 
                 tenha terminado 100% cada task.
@@ -48,7 +66,7 @@
                 uma vez finalizadas, nao podemos mais editar, porem podemos analizar e 
                 reabrir fazendo a nova task pegala como referencia. 
                 Nesta parte sera salva de acordo com o Dia e mês.
-            </div>
+            </div><!--tasks_ended-->
         </section>
 
         <footer>
